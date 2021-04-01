@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dicee Vs Dicee</title>
+    <title>Dice Vs Dice</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
       rel="stylesheet"
     />
 
@@ -27,37 +27,56 @@
 
   <body>
     <main class="container">
-      <h1>DICEE VS DICEE</h1>
-      <h2>Roll the dicees and see who will win.</h2>
+      <h1>DICE VS DICE</h1>
+      <h2 id="winner">Roll the dices and see who will win.</h2>
 
-      <section id="dicee">
-        <div class="dicee-box">
+      <section id="dice">
+        <div class="dice-box">
           <p>Player 1</p>
-          <i class="dicee-img fas fa-9x fa-dice-six"></i>
+          <i id="dice1" class="fas fa-9x fa-dice-six"></i>
         </div>
 
-        <div class="dicee-box">
+        <div class="dice-box">
           <p>Player 2</p>
-          <i class="fas fa-9x fa-dice-six"></i>
+          <i id="dice2" class="fas fa-9x fa-dice-six"></i>
         </div>
       </section>
 
       <section id="button">
-        <button class="btn">ROLL</button>
+        <p><span id="player1">0</span> x <span id="player2">0</span></p>
+        <div class="button-box">
+          <button onclick="rollButton()" class="btn-roll">ROLL</button>
+          <button onclick="resetButton()" class="btn-reset">RESET</button>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Made by <a href="https://github.com/jvtz">jvtz</a></p>
+    <footer class="container">
+      <p>Made by <a href="https://github.com/jvtz" target="_blank">jvtz</a></p>
       <div class="social-media">
-        <a href="https://github.com/jvtz" class="fab fa-github"></a>
+        <a
+          href="https://github.com/jvtz"
+          target="_blank"
+          class="fab fa-github"
+        ></a>
         <a
           href="https://discordapp.com/users/280314697545154562/"
+          target="_blank"
           class="fab fa-discord"
         ></a>
-        <a href="" class="fab fa-reddit"></a>
-        <a href="https://twitter.com/jvt_zzz" class="fab fa-twitter"></a>
+        <a
+          href="https://www.reddit.com/user/jvtzzz"
+          target="_blank"
+          class="fab fa-reddit"
+        ></a>
+        <a
+          href="https://twitter.com/jvt_zzz"
+          target="_blank"
+          class="fab fa-twitter"
+        ></a>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,7 +1,112 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
 * {
   box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+body {
+  background-color: rgb(26, 25, 25);
+  color: white;
+  height: 100vh;
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  margin: auto;
+  width: min(90vw, 810px);
+}
+
+/* ========== MAIN SECTION ========== */
+
+main h1 {
+  font: 400 4rem/1.5 "Oswald", sans-serif;
+}
+
+main h2 {
+  font: 200 2rem/1.5 "Oswald", sans-serif;
+  margin: 1rem 0 3rem;
+}
+
+/* ===== DICEE ===== */
+
+#dicee {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dicee-box i.fas {
+  color: white;
+}
+
+#dicee p {
+  font: 400 1.5rem "Open Sans ";
+}
+
+/* ===== BUTTON ===== */
+
+#button {
+  margin: 4rem auto 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  color: white;
+  font: 400 1.5rem "Oswald";
+  height: 3rem;
+  width: 8rem;
+
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+/* ========== FOOTER SECTION ========== */
+
+footer p {
+  font: 400 1rem "Open Sans";
+}
+
+footer a {
+  color: #0aa7da;
+}
+
+.social-media {
+  margin: 1rem auto 0;
+}
+
+.social-media .fab {
+  color: white;
+  padding: 0 0.3rem;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 480px) {
+  main h1 {
+    font: 400 3rem/1.5 "Oswald", sans-serif;
+  }
+
+  main h2 {
+    font: 200 1.5rem/1.5 "Oswald", sans-serif;
+  }
+
+  #dicee p {
+    font: 400 1.1rem "Open Sans ";
+  }
 }

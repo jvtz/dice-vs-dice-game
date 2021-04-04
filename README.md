@@ -28,8 +28,8 @@ The application consists in a game with two players, rolling two dices clicking 
 Clone locally:
 
 ```bash
-    $ git clone https://github.com/danileao/rocketmusic
-    $ cd rocketmusic
+    $ git clone https://github.com/jvtz/dice-vs-dice-game.git
+    $ cd dice-vs-dice-game
     $ yarn install
     $ yarn start
 ```
